@@ -1,0 +1,35 @@
+{
+    "identifier": "default",
+    "description": "Default capabilities for Backlight",
+    "windows": [
+        "main"
+    ],
+    "permissions": [
+        "core:default",
+        "core:window:allow-hide",
+        "core:window:allow-show",
+        "core:window:allow-set-focus",
+        "core:window:allow-minimize",
+        "shell:allow-open",
+        {
+            "identifier": "shell:allow-spawn",
+            "allow": [
+                {
+                    "name": "python",
+                    "cmd": "python",
+                    "args": true
+                }
+            ]
+        },
+        {
+            "identifier": "shell:allow-execute",
+            "allow": [
+                {
+                    "name": "python",
+                    "cmd": "python",
+                    "args": true
+                }
+            ]
+        }
+    ]
+}
